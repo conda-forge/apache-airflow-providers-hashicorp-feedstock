@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-hashicorp" %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://archive.apache.org/dist/airflow/providers/{{ name }}-{{ version }}.tar.gz
-  sha256: 944c976b4ca69255d98c55e2340de63e6b9709c0217412570c2f42f15c985ebf
+  sha256: eeb7b42d9dc89556f874e4f9a0cb43e91abb50dcb5ad10861d8c48481c91bf3e
 
 build:
   number: 0
