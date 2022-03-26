@@ -1,19 +1,18 @@
 {% set name = "apache-airflow-providers-hashicorp" %}
-{% set version = "2.1.2" %}
-
+{% set version = "2.1.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://archive.apache.org/dist/airflow/providers/{{ name }}-{{ version }}.tar.gz
-  sha256: eeb7b42d9dc89556f874e4f9a0cb43e91abb50dcb5ad10861d8c48481c91bf3e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-hashicorp-{{ version }}.tar.gz
+  sha256: 6f5d22cb4bcafbf074189c705989005682987eac1965184d7a958dd7a7b0c223
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -36,9 +35,10 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for Hashicorp including Hashicorp Vault for Apache Airflow
+  summary: Provider for Apache Airflow. Implements apache-airflow-providers-hashicorp package
   license: Apache-2.0
   license_file: LICENSE
+  license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-hashicorp/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
