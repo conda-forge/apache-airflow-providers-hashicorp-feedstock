@@ -1,13 +1,13 @@
 {% set name = "apache-airflow-providers-hashicorp" %}
-{% set version = "3.5.0" %}
+{% set version = "3.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-hashicorp-{{ version }}.tar.gz
-  sha256: 5cec5f357a8df1e910860a638d1cc89a0262477c3578e6c0a110694026ddd191
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 46aa74bfe3efe53c162f28d336c54049c0250c7a4218b77923c067242ccb2fa5
 
 build:
   noarch: python
@@ -16,30 +16,27 @@ build:
 
 requirements:
   host:
-    - python >=3.8
-    - setuptools >=67.2.0,<68.0.0
+    - python >=3.8,<4.dev0
+    - flit-core >=3.2,<4
     - pip
   run:
     - python >=3.8
-    - apache-airflow >=2.5.0
+    - apache-airflow >=2.6.0
     - hvac >=0.10
 
 test:
   imports:
     - airflow.providers.hashicorp
-    - airflow.providers.hashicorp._internal_client
   commands:
     - pip check
   requires:
     - pip
 
 about:
-  home: https://airflow.apache.org/
-  summary: Provider for Apache Airflow. Implements apache-airflow-providers-hashicorp package
+  home: https://github.com/apache/airflow/
+  summary: Provider package apache-airflow-providers-hashicorp for Apache Airflow
   license: Apache-2.0
-  license_file:
-    - LICENSE
-    - NOTICE
+  license_file: airflow/providers/hashicorp/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-hashicorp/stable/index.html
   dev_url: https://github.com/apache/airflow/
