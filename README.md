@@ -3,11 +3,11 @@ About apache-airflow-providers-hashicorp-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apache-airflow-providers-hashicorp-feedstock/blob/main/LICENSE.txt)
 
-Home: https://airflow.apache.org/
+Home: https://github.com/apache/airflow/
 
 Package license: Apache-2.0
 
-Summary: Provider for Apache Airflow. Implements apache-airflow-providers-hashicorp package
+Summary: Provider package apache-airflow-providers-hashicorp for Apache Airflow
 
 Development: https://github.com/apache/airflow/
 
