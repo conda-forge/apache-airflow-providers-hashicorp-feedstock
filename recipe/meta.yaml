@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-hashicorp" %}
-{% set version = "4.3.1" %}
+{% set version = "4.3.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_hashicorp-{{ version }}.tar.gz
-  sha256: 8bf46da4c75a344dce5a95b3096a5430b43f61cede8fee01cf50620e2b1cfb7b
+  sha256: 05fad1467905bcd39db8633b29a3de5fecac0c9efc0f85366c3d90813593e832
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
-    - python >={{ python_min }},<4.dev0
+    - python >={{ python_min }}
     - apache-airflow >=2.10.0
     - hvac >=1.1.0
 
