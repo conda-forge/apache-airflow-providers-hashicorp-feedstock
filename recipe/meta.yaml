@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-hashicorp" %}
-{% set version = "4.3.3" %}
+{% set version = "4.3.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_hashicorp-{{ version }}.tar.gz
-  sha256: 96001890ed6ab6e8bf9623fd430b4fdb4aa0d15b16f88b110ad6db8ccf051b70
+  sha256: 2c92b17fbda859cab5b5bd7e4c2956b850ca05c353c1c1222f7d9ba2dabb106e
 
 build:
   noarch: python
