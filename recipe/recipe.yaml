@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-hashicorp
-  version: "4.4.3"
+  version: 4.4.3
 
 package:
   name: ${{ name|lower }}
@@ -25,7 +25,6 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
     - hvac >=1.1.0
-
 tests:
   - python:
       imports:
