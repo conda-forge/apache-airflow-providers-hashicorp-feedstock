@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-hashicorp
-  version: 4.4.3
+  version: "4.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_hashicorp-${{ version }}.tar.gz
-  sha256: ee44b74744dbbc0711b35e0d0a8db1c8aed5f82c74dbaabd6e0d07f5e93ea96b
+  sha256: e6ccd108b603817b541a0dc26e9e7d0d5412b6ed9ee9c34d3450ebd0fd412383
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
     - hvac >=1.1.0
+
 tests:
   - python:
       imports:
