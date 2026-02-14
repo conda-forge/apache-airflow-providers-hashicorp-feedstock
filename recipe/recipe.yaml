@@ -25,6 +25,7 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
     - hvac >=1.1.0
+
 tests:
   - python:
       imports:
