@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-hashicorp
-  version: "4.7.0"
+  version: "4.7.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_hashicorp-${{ version }}.tar.gz
-  sha256: 3cebdf101298ce66a5565795947b1a02a65b6bdf7e02b65c2d13f21db31a9aac
+  sha256: f781fcf6be41154a313dc1819568d9a5377227c1300462e395c2be52bbb5db9a
 
 build:
   noarch: python
